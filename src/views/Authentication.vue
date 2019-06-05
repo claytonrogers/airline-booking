@@ -1,12 +1,75 @@
 <template>
   <div class="row">
-    <amplify-authenticator class="authenticator__form"></amplify-authenticator>
+    <amplify-authenticator
+      class="authenticator__form"
+      v-bind:authConfig="authConfig"
+    ></amplify-authenticator>
+
+    
   </div>
 </template>
 
 <script>
 // @ts-ignore
 import { AmplifyEventBus } from "aws-amplify-vue";
+
+const authConfig = {
+  signUpConfig: {
+    defaultCountryCode: "44",
+    header: "Sign up for a new account",
+    hideAllDefaults: false,
+    signUpFields: [
+      {
+        label: 'UserName',
+        key: 'username',
+        required: true,
+        placeholder: 'UserName',
+        type: 'string',
+        displayOrder: 1
+      },
+      {
+        label: 'First Name',
+        key: 'given_name',
+        required: true,
+        placeholder: 'First Name',
+        type: 'string',
+        displayOrder: 2
+      },
+      {
+        label: 'Last Name',
+        key: 'family_name',
+        required: true,
+        placeholder: 'Last Name',
+        type: 'string',
+        displayOrder: 3
+      },
+      {
+        label: 'Email',
+        key: 'email',
+        required: true,
+        placeholder: 'Email',
+        type: 'email',
+        displayOrder: 4
+      },
+      {
+        label: 'Phone',
+        key: 'phone_number',
+        required: true,
+        placeholder: 'Phone',
+        type: 'string',
+        displayOrder: 5
+      },
+      {
+        label: 'Password',
+        key: 'password',
+        required: true,
+        placeholder: 'Password',
+        type: 'password',
+        displayOrder: 6
+      }
+    ]
+  }
+};
 
 /**
  * Authentication view authenticates a customer and redirects to desired page if successful
@@ -19,6 +82,11 @@ export default {
    */
   props: {
     redirectTo: String
+  },
+  data() {
+    return {
+      authConfig
+    }
   },
   mounted() {
     /**

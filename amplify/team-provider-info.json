@@ -1,0 +1,19 @@
+{
+    "learning": {
+        "awscloudformation": {
+            "AuthRoleName": "airline-booking-learning-20190522151224-authRole",
+            "UnauthRoleArn": "arn:aws:iam::456058368379:role/airline-booking-learning-20190522151224-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::456058368379:role/airline-booking-learning-20190522151224-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "airline-booking-learning-20190522151224-deployment",
+            "UnauthRoleName": "airline-booking-learning-20190522151224-unauthRole",
+            "StackName": "airline-booking-learning-20190522151224",
+            "StackId": "arn:aws:cloudformation:us-west-2:456058368379:stack/airline-booking-learning-20190522151224/4c0396e0-7cd6-11e9-a138-0657eb5c1e84"
+        },
+        "categories": {
+            "auth": {
+                "serverlessairlineauth": {}
+            }
+        }
+    }
+}
