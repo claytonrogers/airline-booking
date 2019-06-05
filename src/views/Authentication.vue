@@ -15,7 +15,7 @@ import { AmplifyEventBus } from "aws-amplify-vue";
 
 const authConfig = {
   signUpConfig: {
-    defaultCountryCode: "44",
+    defaultCountryCode: "1",
     header: "Sign up for a new account",
     hideAllDefaults: false,
     signUpFields: [
