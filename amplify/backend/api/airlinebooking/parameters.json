@@ -6,5 +6,7 @@
             "authserverlessairlineauth",
             "Outputs.UserPoolId"
         ]
-    }
+    },
+    "FlightDataSource": "FlightTable",
+    "BookingDataSource": "BookingTable"
 }
