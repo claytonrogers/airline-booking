@@ -12,7 +12,7 @@
   "dependencies": {
     "aws-amplify": "^1.1.28",
     "aws-amplify-vue": "^0.2.11",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "esdoc": "^1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
     "fuse.js": "^3.4.5",
